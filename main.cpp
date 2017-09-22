@@ -11,15 +11,24 @@
  * Created on September 22, 2017, 1:40 PM
  */
 
-#include <cstdlib>
+#include <iostream>
 
 using namespace std;
 
-/*
- * 
- */
-int main(int argc, char** argv) {
+// Insert your function here
 
+int main(void) 
+{
+    int var = 0;
+    
+    for (int i = 0; i < 10; i++)
+        if (i % 2) 
+            increment(var);
+        else
+            increment(var, i);
+    
+    cout << var << endl;
+    
     return 0;
 }
 
