@@ -17,9 +17,20 @@ using namespace std;
 
 // Insert your function here
 
+int var = 0;
+
+void increment(int increment)
+{    
+    var = increment + 1;
+}
+
+void increment(int increment, int i)
+{
+    var = increment + i;
+}
+
 int main(void) 
 {
-    int var = 0;
     
     for (int i = 0; i < 10; i++)
         if (i % 2) 
